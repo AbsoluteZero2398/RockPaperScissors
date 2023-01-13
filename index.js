@@ -8,6 +8,9 @@ playRound();
 
 function playerChoice(){
     let input = prompt("Type Rock, Paper, or Scissors");
+    while(input == null){
+        input = prompt('Type Rock, Paper, Scissors')
+    }
     input = input.toLowerCase();
     console.log(input);
     }
@@ -18,7 +21,7 @@ function playerChoice(){
 
 function playRound(playerSelection, computerSelection){
 
-switch(true){
+/*switch(true){
 
 case playerSelection == "rock" && computerSelection == 0:
     console.log("Tie");
@@ -48,7 +51,7 @@ case playerSelection == "scissors" && computerSelection == 0:
     console.log("Lose");
     break;
 
-    }
+    }*/
 }
 
 game();
