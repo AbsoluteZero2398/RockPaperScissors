@@ -29,31 +29,31 @@ function playRound(playerSelection, computerSelection){
 
 switch(true){
 
-case playerSelection == "rock" && computerSelection == 0:
+case playerSelection == "rock" && computerSelection == "rock":
     alert("Tie");
     break;
-case playerSelection == "paper" && computerSelection == 1:
+case playerSelection == "paper" && computerSelection == "paper":
     alert("Tie");
     break;
-case playerSelection == "scissors" && computerSelection == 2:
+case playerSelection == "scissors" && computerSelection == "scissors":
     alert("Tie");
     break;
-case playerSelection == "rock" && computerSelection == 2:
+case playerSelection == "rock" && computerSelection == "scissors":
     alert("Win");
     break;
-case playerSelection == "paper" && computerSelection == 0:
+case playerSelection == "paper" && computerSelection == "rock":
     alert("Win");
     break;
-case playerSelection == "scissors" && computerSelection == 1:
+case playerSelection == "scissors" && computerSelection == "paper":
     alert("Win");
     break;
-case playerSelection == "rock" && computerSelection == 1:
+case playerSelection == "rock" && computerSelection == "paper":
     alert("Lose");
     break;
-case playerSelection == "paper" && computerSelection == 2:
+case playerSelection == "paper" && computerSelection == "scissors":
     alert("Lose");
     break;
-case playerSelection == "scissors" && computerSelection == 0:
+case playerSelection == "scissors" && computerSelection == "rock":
     alert("Lose");
     break;
 
