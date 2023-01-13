@@ -1,10 +1,12 @@
 const choices = ["rock", "paper", "scissors"];
 const playerSelection = playerChoice();
 const computerSelection = computerChoice();
+alert("variables initialized");
 
 function game(){
 playRound();
 }
+alert("first function");
 
 function playerChoice(){
     let input = prompt("Type Rock, Paper, or Scissors");
@@ -14,10 +16,14 @@ function playerChoice(){
     input = input.toLowerCase();
     console.log(input);
     }
-    
+
+alert("second function");
+
     function computerChoice(){
     return choices[Math.floor(Math.random()*choices.length)]
     }
+
+alert("third function");
 
 function playRound(playerSelection, computerSelection){
 
@@ -54,6 +60,8 @@ case playerSelection == "scissors" && computerSelection == 0:
     }
 }
 
+alert("fourth function, switch has completed");
+
 function validateInput(input){
     if(choices.includes(choice)){
         return true;
@@ -61,6 +69,7 @@ function validateInput(input){
         return false;
     }
 }
-}
+
+alert("fifth function");
 
 game();
