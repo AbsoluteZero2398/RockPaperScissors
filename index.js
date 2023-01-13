@@ -6,7 +6,7 @@ playRound();
 
 function playRound(playerSelection, computerSelection){
 const playerSelection = playerChoice();
-const comuputerSelection = computerCHoice();
+const comuputerSelection = computerChoice();
 }
 
 function playerChoice(){
