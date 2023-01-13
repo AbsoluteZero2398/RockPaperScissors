@@ -39,7 +39,9 @@ function validateInput(choice){
 function checkWinner(choiceP, choiceC){
     if(choiceP === choiceC){
         return 'Tie';
-    }
+    } else if (chocieP === "rock" && choiceC == "scissors"){
+        return 'Player';
+}
 }
 
 game();
