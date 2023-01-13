@@ -51,6 +51,4 @@ case playerSelection == "scissors" && computerSelection == 0:
     }
 }
 
-
-
 game();
