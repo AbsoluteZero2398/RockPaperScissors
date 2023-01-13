@@ -6,6 +6,16 @@ function game(){
 playRound();
 }
 
+function playerChoice(){
+    let input = prompt("Type Rock, Paper, or Scissors");
+    input = input.toLowerCase();
+    console.log(input);
+    }
+    
+    function computerChoice(){
+    return choices[Math.floor(Math.random()*choices.length)]
+    }
+
 function playRound(playerSelection, computerSelection){
 
 switch(true){
@@ -41,14 +51,6 @@ case playerSelection == "scissors" && computerSelection == 0:
     }
 }
 
-function playerChoice(){
-let input = prompt("Type Rock, Paper, or Scissors");
-input = input.toLowerCase();
-console.log(input);
-}
 
-function computerChoice(){
-return choices[Math.floor(Math.random()*choices.length)]
-}
 
 game();
