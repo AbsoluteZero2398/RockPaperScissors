@@ -33,11 +33,7 @@ function playerChoice(){
     }
 
 function validateInput(input){
-    if(choices.includes(choice)){
-        return true;
-    } else {
-        return false;
-    }
+    return choices.includes(choice);
 }
 
 game();
