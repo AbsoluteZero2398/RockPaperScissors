@@ -32,8 +32,14 @@ function playerChoice(){
     return choices[Math.floor(Math.random()*choices.length)]
     }
 
-function validateInput(input){
+function validateInput(choice){
     return choices.includes(choice);
+}
+
+function checkWinner(choiceP, choiceC){
+    if(choiceP === choiceC){
+        return 'Tie';
+    }
 }
 
 game();
