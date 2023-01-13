@@ -21,7 +21,7 @@ function playerChoice(){
 
 function playRound(playerSelection, computerSelection){
 
-/*switch(true){
+switch(true){
 
 case playerSelection == "rock" && computerSelection == 0:
     console.log("Tie");
@@ -51,7 +51,16 @@ case playerSelection == "scissors" && computerSelection == 0:
     console.log("Lose");
     break;
 
-    }*/
+    }
+}
+
+function validateInput(input){
+    if(choices.includes(choice)){
+        return true;
+    } else {
+        return false;
+    }
+}
 }
 
 game();
