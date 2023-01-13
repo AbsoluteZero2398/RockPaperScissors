@@ -4,9 +4,9 @@ function game(){
 playRound();
 }
 
-function playRound(playerSelection, computerSelection){
+function playRound(){
 const playerSelection = playerChoice();
-const comuputerSelection = computerChoice();
+const computerSelection = computerChoice();
 }
 
 function playerChoice(){
